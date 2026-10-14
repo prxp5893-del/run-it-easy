@@ -1,0 +1,18 @@
+{
+  "source": "code-archive",
+  "project": "pixel-perfect-replica-main",
+  "capabilities": [
+    {"capability":"application code and routes","source":"uploaded archive","outcome":"Recreate the SAC Community app in the current preview","status":"in_progress","next_action":"Migrate the app pages and interactions"},
+    {"capability":"database schema","source":"Drizzle migration with 10 public tables","outcome":"Migrate schema and access policies to Lovable Cloud","status":"pending","next_action":"Enable Cloud and adapt the SQL migration"},
+    {"capability":"application records","source":"No record export attached","outcome":"Import filtered records when supplied","status":"pending","next_action":"Request a safe per-table CSV or JSON export after preview"},
+    {"capability":"authentication","source":"Cloud auth in uploaded app","outcome":"Use Lovable Cloud authentication","status":"pending","next_action":"Migrate auth behavior; user identities and first-login setup depend on an export"},
+    {"capability":"authorization","source":"RLS policies in uploaded migration","outcome":"Preserve access boundaries in Cloud","status":"pending","next_action":"Review and migrate table policies and grants"},
+    {"capability":"uploaded file bytes","source":"Archive inspection","outcome":"Not yet determined","status":"pending","next_action":"Inspect asset and storage references"},
+    {"capability":"external providers","source":"Archive inspection","outcome":"Not yet determined","status":"pending","next_action":"Inspect provider call sites"},
+    {"capability":"public endpoints and callbacks","source":"Archive inspection","outcome":"Not yet determined","status":"pending","next_action":"Inspect routes, functions, and external callers"},
+    {"capability":"webhooks and schedules","source":"Archive inspection","outcome":"Not yet determined","status":"pending","next_action":"Inspect backend configuration and source call sites"},
+    {"capability":"secrets and runtime variables","source":"Archive manifest","outcome":"LOVABLE_DB_MIGRATION_URL is referenced by migration tooling; whether app runtime needs it is unverified","status":"pending","next_action":"Inspect configuration and call sites; do not copy secret values"},
+    {"capability":"cutover","source":"Uploaded app","outcome":"No production cutover requested","status":"pending","next_action":"Keep the existing service endpoints unless a safe replacement is explicitly agreed"},
+    {"capability":"verification","source":"Uploaded app","outcome":"Not yet verified","status":"pending","next_action":"Verify public routes, signed-in create/read/update/delete, and access boundaries"}
+  ]
+}

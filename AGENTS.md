@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep application pages in TanStack file routes under `src/routes` and place internal server work in `createServerFn`, so routing and server execution remain compatible with the project runtime.
