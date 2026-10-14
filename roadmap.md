@@ -1,0 +1,4 @@
+- [ ] Inspect the uploaded app’s production capabilities, file/media usage, and all data tables.
+- [ ] Recreate its pages, interactions, schema, and access rules in this preview and Lovable Cloud.
+- [ ] Verify the app’s main signed-in flows; keep unavailable account/content exports explicitly pending.
+- [ ] Re-read the migration ledger and roadmap, then hand off any remaining export or verification steps.
